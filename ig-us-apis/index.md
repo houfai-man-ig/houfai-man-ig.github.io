@@ -1,3 +1,6 @@
+Test header
+Test description
+
 
 ## Rules of Engagement
 You will find a project in Github that we use to generate our “rules of engagement”: [ig-orchestrations](https://github.com/IG-Group/ig-orchestrations)
@@ -8,7 +11,6 @@ You don’t need to build this project as the artifacts are published to “oss.
 You’ll want to download the roe.zip for the WebSocket API.
 
 See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;quick~com.ig) 
-
 
 ## WebSocket APIs
 The WebSocket APIs are built on FIX/P and FIX Orchestra. The latter is a new FIX Trading Community initiative that is in active development.
@@ -40,14 +42,14 @@ The project structure is as follows:
 │   └───ts-interface - TypeScript interfaces.
 ```
 
-## Examples
+## WebSocket Client Examples
 You can also find simple WebSocket Client Examples here:
-- [Node Client](https://github.com/IG-Group/fix-ws-client-example)
+- [Node](https://github.com/IG-Group/fix-ws-client-example)
 - [Python Pre-Trade](https://github.com/IG-Group/ig-us-websocket-client-python-example) 
 - [Python Trade](https://github.com/IG-Group/ig-us-websocket-trade-python-example)
 - [Java](https://github.com/IG-Group/ig-us-websocket-java-examples)
 
-FYI - Logging onto the WebSocket API using username and password results in a “logout” messages being sent to web platform (as it does when you try to log on to the web platform multiple times). 
+Logging onto the WebSocket API using username and password results in a “logout” messages being sent to web platform (as it does when you try to log on to the web platform multiple times). 
 
 For testing you can log onto the API first. Logging onto web platform does not log out the API.
 These are the Demo environment Hosts, port and URLs.  See the example.
@@ -57,10 +59,9 @@ These are the Demo environment Hosts, port and URLs.  See the example.
 | Pre Trade | demo-iguspretrade.ig.com | 443	    | /pretrade |
 | Trade	    | demo-igustrade.ig.com	   | 443	    | /trade    |
 
-> Example:	wss://iguspretrade.ig.com/pretrade	 	 
+_wss://iguspretrade.ig.com/pretrade_	 	 
 
 ## Contact
-
 For queries regarding integration, please contact Kevin Downey.
 
 | **Name**      | **Contact Email**    |
