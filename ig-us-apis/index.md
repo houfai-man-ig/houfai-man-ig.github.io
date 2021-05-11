@@ -1,5 +1,3 @@
-ig-us-apis
-
 ## Rules of Engagement
 You will find a project in Github that we use to generate our “rules of engagement”: [ig-orchestrations](https://github.com/IG-Group/ig-orchestrations)
 
