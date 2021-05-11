@@ -69,7 +69,7 @@ For information related to our FIX5.0SP2 API, please see the latest rules of eng
 
 See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;gav~com.ig.orchestrations.us.rfed~document-fixt~~~)
 
-## FIX API Client Example:
+## FIX API Client Example
 - [Java](https://github.com/IG-Group/ig-us-websocket-java-examples)
 
 ## Contact
