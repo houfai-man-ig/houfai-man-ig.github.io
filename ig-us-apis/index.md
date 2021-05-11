@@ -1,4 +1,4 @@
-# ig-us-apis
+# IG US APIs
 
 # Table of Contents
 - [Rules of Engagement](#rules-of-engagement)
@@ -13,9 +13,9 @@ You will find a project in Github that we use to generate our “rules of engage
 The project generates API Documents, JSON Schema, Java bindings and defines TypeScript interfaces. 
 
 You don’t need to build this project as the artifacts are published to “oss.sonatype.org” and can be downloaded from there.
-You’ll want to download the roe.zip for the WebSocket API.
+You’ll want to download the roe.zip for the APIs.
 
-See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;quick~com.ig) 
+See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;gav~com.ig.orchestrations.us.rfed~document-websocket~~~) 
 
 ## WebSocket APIs
 The WebSocket APIs are built on FIX/P and FIX Orchestra. The latter is a new FIX Trading Community initiative that is in active development.
@@ -62,12 +62,18 @@ These are the Demo environment Hosts, port and URLs.  See the example.
 | **API**   | **Host**                 | **Port** | **Path**  |
 |-----------|--------------------------|----------|-----------|
 | Pre Trade | demo-iguspretrade.ig.com | 443	    | /pretrade |
-| Trade	    | demo-igustrade.ig.com	   | 443	    | /trade    |
+| Trade	    | demo-igustrade.ig.com	   | 443	    | /trade    |	 	 
 
-_wss://iguspretrade.ig.com/pretrade_	 	 
+## FIX API
+For information related to our FIX5.0SP2 API, please see the latest rules of engagement zip distribution in Sonatype.
+
+See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;gav~com.ig.orchestrations.us.rfed~document-fixt~~~)
+
+## FIX API Client Example:
+- [Java](https://github.com/IG-Group/ig-us-websocket-java-examples)
 
 ## Contact
-For queries regarding integration, please contact Kevin Downey.
+In order to use these APIs, please contact Kevin Downey with the details below.
 
 | **Name**      | **Contact Email**    |
 |---------------|----------------------|
