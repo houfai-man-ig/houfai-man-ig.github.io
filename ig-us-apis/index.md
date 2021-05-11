@@ -51,12 +51,9 @@ FYI - Logging onto the WebSocket API using username and password results in a â€
 For testing you can log onto the API first. Logging onto web platform does not log out the API.
 These are the Demo environment Hosts, port and URLs.  See the example.
 
-| API        | Host                     | Port    | Path      |
-
-|------------|--------------------------|---------|-----------|
-
+| API           | Host                     | Port    | Path      |
+|---------------|--------------------------|---------|-----------|
 | Pre Trade  | demo-iguspretrade.ig.com | 443	    | /pretrade |
-
 | Trade	     | demo-igustrade.ig.com	  | 443	    | /trade    |
 
 > Example:	wss://iguspretrade.ig.com/pretrade	 	 
