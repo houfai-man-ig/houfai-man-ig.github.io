@@ -1,6 +1,13 @@
 # ig-us-apis
 
-## Rules of Engagement
+# Table of Contents
+- [Rules of Engagement](#rules-of-engagement)
+- [WebSocket APIs](#websocket-apis)
+- [Websocket Client Examples](#websocket-client-examples)
+- [Contact](#contact)
+
+
+## Rules of Engagement 
 You will find a project in Github that we use to generate our “rules of engagement”: [ig-orchestrations](https://github.com/IG-Group/ig-orchestrations)
 
 The project generates API Documents, JSON Schema, Java bindings and defines TypeScript interfaces. 
