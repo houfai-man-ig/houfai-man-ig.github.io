@@ -20,8 +20,7 @@ We’re actively working on improving this project so do expect to see some chan
 
 The project structure is as follows:
 
-```
-│   [Display text](a "Hover text") - Describes how to build the project using Apache Maven and NPM, the outputs of the mvn build steps is generally in subdirectories named  “target”.
+│   readme.md- Describes how to build the project using Apache Maven and NPM, the outputs of the mvn build steps is generally in subdirectories named  “target”.
 └───chart-data - For the Chart Data API this contains the JSON Schema source code and build for the Java bindings.
 │   └───java-bindings - Generates the Java/JSON bindings.
 │   └───json-schema - Source code for the JSON schema.
@@ -37,7 +36,6 @@ The project structure is as follows:
 │   └───json-schema – Generates the JSON Schema.
 │   └───orchestration – Generates the IG RFED “orchestration” from the FIX Standard orchestration – an XML document.
 │   └───ts-interface - TypeScript interfaces.
-```
 
 ## Examples
 You can also find simple WebSocket Client Examples here:
@@ -53,8 +51,8 @@ These are the Demo environment Hosts, port and URLs.  See the example.
 
 | API           | Host                     | Port    | Path      |
 |---------------|--------------------------|---------|-----------|
-| Pre Trade  | demo-iguspretrade.ig.com | 443	    | /pretrade |
-| Trade	     | demo-igustrade.ig.com	  | 443	    | /trade    |
+| Pre Trade     | demo-iguspretrade.ig.com | 443	   | /pretrade |
+| Trade	        | demo-igustrade.ig.com	   | 443	   | /trade    |
 
 > Example:	wss://iguspretrade.ig.com/pretrade	 	 
 
