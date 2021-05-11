@@ -4,6 +4,8 @@
 - [Rules of Engagement](#rules-of-engagement)
 - [WebSocket APIs](#websocket-apis)
 - [Websocket Client Examples](#websocket-client-examples)
+- [FIX API](#fix-api)
+- [FIX API Client Example](#fix-api-client-example)
 - [Contact](#contact)
 
 
