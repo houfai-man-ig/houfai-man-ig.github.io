@@ -54,8 +54,11 @@ These are the Demo environment Hosts, port and URLs.  See the example.
 | API        | Host                     | Port    | Path      |
 
 |------------|--------------------------|---------|-----------|
+
 | Pre Trade  | demo-iguspretrade.ig.com | 443	    | /pretrade |
+
 | Trade	     | demo-igustrade.ig.com	  | 443	    | /trade    |
+
 > Example:	wss://iguspretrade.ig.com/pretrade	 	 
 
 ## Contact
