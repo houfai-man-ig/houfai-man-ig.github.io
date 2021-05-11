@@ -1,37 +1,66 @@
-## Welcome to GitHub Pages /ig-us-apis/ directory
+## Rules of Engagement
+You will find a project in Github that we use to generate our “rules of engagement”: [ig-orchestrations](https://github.com/IG-Group/ig-orchestrations)
 
-You can use the [editor on GitHub](https://github.com/houfai-man-ig/houfai-man-ig.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+The project generates API Documents, JSON Schema, Java bindings and defines TypeScript interfaces. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You don’t need to build this project as the artifacts are published to “oss.sonatype.org” and can be downloaded from there.
+You’ll want to download the roe.zip for the WebSocket API.
 
-### Markdown
+See: [oss.sonatype.org](https://oss.sonatype.org/#nexus-search;quick~com.ig) 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## WebSocket APIs
+The WebSocket APIs are built on FIX/P and FIX Orchestra. The latter is a new FIX Trading Community initiative that is in active development.
+Ref: 
+-	[Fix Trading](https://www.fixtrading.org/)
+-	[Fix Orchestra](https://www.fixtrading.org/standards/fix-orchestra/)
+-	[Fix Trading Standards](https://www.fixtrading.org/standards/)
 
-# Header 1
-## Header 2
-### Header 3
+We’re actively working on improving this project so do expect to see some changes.
 
-- Bulleted
-- List
+The project structure is as follows:
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+│   readme.md - Describes how to build the project using Apache Maven and NPM, the outputs of the mvn build steps is generally in subdirectories named  “target”.
+└───chart-data - For the Chart Data API this contains the JSON Schema source code and build for the Java bindings.
+│   └───java-bindings - Generates the Java/JSON bindings.
+│   └───json-schema - Source code for the JSON schema.
+└───fixp - For the FIX Performance protocol this contains the JSON Schema source code and build for the Java bindings.
+│   └───java-binding - Generates the Java/JSON bindings
+│   └───json-schema - Source code for the JSON schema.
+└───ig-us-rfed – Contains the FIX “orchestration” and supporting information for the IG US RFED API.
+│   |───document/ 
+│   |   └───document-websocket - Generates the Rules of Engagement in markdown and HTML for the WebSocket API.
+│   |   └───document-fixt - Generates the Rules of Engagement in markdown and HTML for the FIX50sp2/FIXT1.1 API.
+│   └───document-generation – Generates simple HTML documents using a FIX Trading Community utility - see note below.
+│   └───java-binding - Generates the Java/JSON bindings.
+│   └───json-schema – Generates the JSON Schema.
+│   └───orchestration – Generates the IG RFED “orchestration” from the FIX Standard orchestration – an XML document.
+│   └───ts-interface - TypeScript interfaces.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Examples
+You can also find simple WebSocket Client Examples here:
+- [Node Client](https://github.com/IG-Group/fix-ws-client-example)
+- [Python Pre-Trade](https://github.com/IG-Group/ig-us-websocket-client-python-example) 
+- [Python Trade](https://github.com/IG-Group/ig-us-websocket-trade-python-example)
+- [Java](https://github.com/IG-Group/ig-us-websocket-java-examples)
 
-### Jekyll Themes
+FYI - Logging onto the WebSocket API using username and password results in a “logout” messages being sent to web platform (as it does when you try to log on to the web platform multiple times). 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/houfai-man-ig/houfai-man-ig.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+For testing you can log onto the API first. Logging onto web platform does not log out the API.
+These are the Demo environment Hosts, port and URLs.  See the example.
 
-### Support or Contact
+| API        | Host                     | Port    | Path      |
+|------------|--------------------------|---------|-----------|
+| Pre Trade  | demo-iguspretrade.ig.com | 443	  | /pretrade |
+| Trade	     | demo-igustrade.ig.com	| 443	  | /trade    |
+> Example:	wss://iguspretrade.ig.com/pretrade	 	 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Contact
+
+For queries regarding integration, please contact Kevin Downey.
+
+| Name          | Contact Email            |
+|---------------|--------------------------|
+| Kevin Downey  | Kevin.Downey@ig.com      |
