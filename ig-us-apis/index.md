@@ -1,3 +1,5 @@
+# ig-us-apis
+
 ## Rules of Engagement
 You will find a project in Github that we use to generate our “rules of engagement”: [ig-orchestrations](https://github.com/IG-Group/ig-orchestrations)
 
@@ -20,7 +22,8 @@ We’re actively working on improving this project so do expect to see some chan
 
 The project structure is as follows:
 
-│   readme.md- Describes how to build the project using Apache Maven and NPM, the outputs of the mvn build steps is generally in subdirectories named  “target”.
+```
+│   readme.md - Describes how to build the project using Apache Maven and NPM, the outputs of the mvn build steps is generally in subdirectories named  “target”.
 └───chart-data - For the Chart Data API this contains the JSON Schema source code and build for the Java bindings.
 │   └───java-bindings - Generates the Java/JSON bindings.
 │   └───json-schema - Source code for the JSON schema.
@@ -36,6 +39,7 @@ The project structure is as follows:
 │   └───json-schema – Generates the JSON Schema.
 │   └───orchestration – Generates the IG RFED “orchestration” from the FIX Standard orchestration – an XML document.
 │   └───ts-interface - TypeScript interfaces.
+```
 
 ## Examples
 You can also find simple WebSocket Client Examples here:
